@@ -31,3 +31,18 @@ Evcache
       空间避免主键冲突一般的缓存命中率在 99%以上与Netflix 驻留数据框架能够良好协作，典型的访问次序:
       内存 ->EVCache -> Cassandra/SimpleDB/S3
 </pre>
+
+###Evcache使用
+![](https://i.imgur.com/ZPY58bq.png)
+
+![](https://i.imgur.com/tQgM4Vo.png)
+
+![](https://i.imgur.com/8CiFtyc.png)
+
+![](https://i.imgur.com/pZxPOQR.png)
+
+
+当然本文所演示的 EVCache配合 memcached使用时，memcached被硬编码进代码，实际过程中使用，
+可以将其与 ZK等服务发现服务进行一个结合，实现灵活运用
+
+![](https://i.imgur.com/T3pilFa.png)
